@@ -1,0 +1,22 @@
+body {
+    background: #fefefe;
+}
+
+h1 {
+    background: rgb(255, 204, 0);
+}
+
+h2 {
+    background: #1460AA;
+    color: #ffea00;
+}
+
+h3 {
+    background: #cccccc;
+}
+
+footer {
+    background: blue;
+    color: white;
+}
+
