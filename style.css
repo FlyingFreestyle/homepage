@@ -6,6 +6,8 @@ html {
     box-sizing: inherit;
 }
 
+/*  */
+
 body {
     background: #fefefe;
 }
@@ -14,7 +16,7 @@ header, section, footer {
     padding: 16px;
 }
 
-.listOfArticles {
+.section__title {
     background: #1460AA;
     color: #ffea00;
 }
@@ -23,7 +25,7 @@ header, section, footer {
     background: rgb(255, 204, 0);
 }
 
-.contentHeader {
+.article__title {
     background: #cccccc;
 }
 
