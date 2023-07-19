@@ -26,3 +26,11 @@ header, section, footer {
 .contentHeader {
     background: #cccccc;
 }
+
+.navigation {
+    background: blue;
+}
+
+.navigation__link {
+    color: white;
+}
