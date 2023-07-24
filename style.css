@@ -16,12 +16,12 @@ body {
     background: #cccccc;
     margin: 0 auto;
     text-align: center;
-    width: 60vw;
+    max-width: 60vw;
 }
 
 .article__content {
     margin: 0 auto;
-    width: 55vw;
+    max-width: 55vw;
 }
 
 .footer {
@@ -43,7 +43,7 @@ body {
     color: #ffea00;
     margin: 10px auto;
     text-align: center;
-    width: 70vw;
+    max-width: 70vw;
 }
 
 .top {
