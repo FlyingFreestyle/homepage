@@ -12,10 +12,6 @@ body {
     background: #fefefe;
 }
 
-.top__title {
-    padding: 10px;
-}
-
 .section__title {
     /* padding: 16px; */
     background: #1460AA;
@@ -27,6 +23,10 @@ body {
 
 .top {
     background: rgb(255, 204, 0);
+}
+
+.top__title {
+    padding: 10px;
 }
 
 .article__title {
