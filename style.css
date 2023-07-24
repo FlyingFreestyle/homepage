@@ -28,6 +28,11 @@ body {
     padding: 16px;
 }
 
+.header {
+    position: sticky;
+    top: 0;
+}
+
 .navigation {
     background: blue;
     padding: 16px;
