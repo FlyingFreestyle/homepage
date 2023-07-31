@@ -9,7 +9,8 @@ html {
 /*  */
 
 body {
-    background: #fefefe;
+    background: rgb(34,193,195);
+    background: radial-gradient(circle, rgba(34,193,195,1) 0%, rgba(34,193,195,1) 60%, rgba(253,187,45,1) 100%);
 }
 
 .article__title {
