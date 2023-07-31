@@ -35,7 +35,11 @@ body {
 
 .navigation {
     background: blue;
-    padding: 16px;
+    padding: 1em;
+    display: flex;
+    flex-direction: row;
+    gap: 1.5em;
+    justify-content: center;
 }
 
 .navigation__link {
