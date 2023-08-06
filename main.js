@@ -14,7 +14,7 @@ console.log(hello("Karol", "24"))
 
 
 const hamburger = document.querySelector('.hamburger--js')
-hamburger.addEventListener('click', (e) => {
+hamburger.addEventListener('click', () => {
   const navigation = document.querySelector('.navigation--js')
   navigation.classList.toggle('navigation--open')
 })
