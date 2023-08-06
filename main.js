@@ -11,3 +11,11 @@ function hello(name, age) {
 console.log(hello("Janek", "20"))
 console.log(hello("Ewa", "22"))
 console.log(hello("Karol", "24"))
+
+
+const hamburger = document.querySelector('.hamburger--js')
+hamburger.addEventListener('click', (e) => {
+  console.log(hamburger)
+  const navigation = document.querySelector('.navigation--js')
+  navigation.classList.toggle('navigation--open')
+})

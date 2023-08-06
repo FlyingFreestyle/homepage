@@ -18,26 +18,29 @@ body {
     text-align: center;
 }
 
-.footer {
-    padding: 16px;
-}
-
 .header {
     position: sticky;
+    background: blue;
     top: 0;
 }
 
 .navigation {
     background: blue;
     padding: 1em;
-    display: flex;
-    flex-direction: row;
+    display: none;
     gap: 1.5em;
-    justify-content: center;
 }
 
 .navigation__link {
     color: white;
+}
+
+.navigation--open {
+    display: flex;
+}
+
+.footer {
+    padding: 16px;
 }
 
 .section__about {
@@ -70,7 +73,42 @@ body {
 }
 
 @media screen and (min-width: 320px) and (max-width: 768px){
+    .hamburger {
+        background: none;
+        padding: 4px;
+        border: 0;
+        size: 1.5rem;
+    }
+
+    .header {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        min-height: 50px;
+    }
+
+    .navigation {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 50px;
+        width: 100%;
+    }
+
     .section__modules {
         grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .hamburger {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
     }
 }
