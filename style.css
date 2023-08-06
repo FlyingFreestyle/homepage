@@ -63,3 +63,9 @@ body {
 .top__title {
     padding: 10px;
 }
+
+@media screen and (min-width: 320px) and (max-width: 768px){
+    .section__modules {
+        grid-template-columns: 1fr;
+    }
+}
