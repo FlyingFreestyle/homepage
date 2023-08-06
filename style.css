@@ -40,6 +40,12 @@ body {
     color: white;
 }
 
+.section__about {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0 1em;
+}
+
 .section__modules {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
