@@ -7,7 +7,7 @@
     "cow": "cowsay witam",
     "start": "parcel src/index.html",
     "build": "parcel build src/index.html",
-    "predeploy": "rm -rf dist && parcel build src/index.html --no-source-maps --public-url ./",
+    "predeploy": "rm -rf dist && parcel build src/index.html --public-url ./",
     "deploy": "gh-pages -d dist"
   },
   "keywords": [],
