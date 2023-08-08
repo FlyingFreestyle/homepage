@@ -109,5 +109,8 @@ body {
 
     &__title {
         padding: 10px;
+        &::before {
+            content: "📝";
+        }
     }
 }
