@@ -1,10 +1,19 @@
 .top {
-    background: rgb(255, 204, 0);
+    --bg-color: #ffcc00;
+    --txt-color: #070707;
 
     &__title {
+        background: var(--bg-color);
+        color: var(--txt-color);
+
         padding: 10px;
         &::before {
             content: "📝";
+        }
+
+        @media (prefers-color-scheme: dark) {
+            background: var(--txt-color);
+            color: var(--bg-color);
         }
     }
 }

@@ -1,4 +1,7 @@
 .section {
+    --bg-color: #ffcc00;
+    --txt-color: #070707;
+
     &__about {
         display: grid;
         grid-template-columns: 1fr;
@@ -17,10 +20,15 @@
     }
 
     &__title {
-        background: #1460AA;
-        color: #ffea00;
+        background: var(--bg-color);
+        color: var(--txt-color);
         margin: 10px auto;
         text-align: center;
         max-width: 70vw;
+
+        @media (prefers-color-scheme: dark) {
+            background: var(--txt-color);
+            color: var(--bg-color);
+        }
     }
 }
