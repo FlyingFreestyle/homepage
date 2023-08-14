@@ -1,0 +1,10 @@
+.top {
+    background: rgb(255, 204, 0);
+
+    &__title {
+        padding: 10px;
+        &::before {
+            content: "📝";
+        }
+    }
+}

@@ -1,0 +1,12 @@
+.header {
+    position: sticky;
+    background: blue;
+
+    @media screen and (min-width: 320px) and (max-width: 768px){
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        min-height: 50px;
+    }
+
+}

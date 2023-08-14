@@ -1,0 +1,26 @@
+.section {
+    &__about {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 0 1em;
+    }
+
+    &__modules {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5em;
+        padding: 1em;
+
+        @media screen and (min-width: 320px) and (max-width: 768px){
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &__title {
+        background: #1460AA;
+        color: #ffea00;
+        margin: 10px auto;
+        text-align: center;
+        max-width: 70vw;
+    }
+}

@@ -1,4 +1,11 @@
 @import "../../node_modules/normalize.css/normalize.css";
+@import "./components/article.scss";
+@import "./components/footer.scss";
+@import "./components/hamburger.scss";
+@import "./components/header.scss";
+@import "./components/navigation.scss";
+@import "./components/section.scss";
+@import "./components/top.scss";
 
 html {
     box-sizing: border-box;
@@ -13,106 +20,4 @@ html {
 body {
     background: rgb(34,193,195);
     background: radial-gradient(circle, rgba(34,193,195,1) 0%, rgba(34,193,195,1) 60%, rgba(253,187,45,1) 100%);
-}
-
-.article__title {
-    background: #cccccc;
-    text-align: center;
-}
-
-.hamburger {
-    @media screen and (min-width: 320px) and (max-width: 768px){
-        background: none;
-        padding: 4px;
-        border: 0;
-        size: 1.5rem;
-    }
-    @media screen and (min-width: 768px) {
-        display: none;
-    }
-}
-
-.header {
-    position: sticky;
-    background: blue;
-
-    @media screen and (min-width: 320px) and (max-width: 768px){
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        min-height: 50px;
-    }
-
-}
-
-.navigation {
-    background: blue;
-    padding: 1em;
-    display: none;
-    gap: 1.5em;
-
-    &__link {
-        color: white;
-    }
-
-    &--open {
-        display: flex;
-    }
-
-    @media screen and (min-width: 320px) and (max-width: 768px) {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        position: absolute;
-        top: 50px;
-        width: 100%;
-    }
-    @media screen and (min-width: 768px) {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        top: 0;
-    }
-}
-
-.footer {
-    padding: 16px;
-}
-
-.section {
-    &__about {
-        display: grid;
-        grid-template-columns: 1fr;
-        margin: 0 1em;
-    }
-
-    &__modules {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1.5em;
-        padding: 1em;
-
-        @media screen and (min-width: 320px) and (max-width: 768px){
-            grid-template-columns: 1fr;
-        }
-    }
-
-    &__title {
-        background: #1460AA;
-        color: #ffea00;
-        margin: 10px auto;
-        text-align: center;
-        max-width: 70vw;
-    }
-}
-
-.top {
-    background: rgb(255, 204, 0);
-
-    &__title {
-        padding: 10px;
-        &::before {
-            content: "📝";
-        }
-    }
 }
