@@ -2,22 +2,18 @@
     --bg-color: #edebeb;
     --txt-color: #202020;
 
+    @media (prefers-color-scheme: dark) {
+        --bg-color: #202020;
+        --txt-color: #edebeb;
+    }
+
     &__title {
         background: var(--bg-color);
         color: var(--txt-color);
         text-align: center;
-
-        @media (prefers-color-scheme: dark) {
-            background: var(--txt-color);
-            color: var(--bg-color);
-        }
     }
 
     &__content {
-        color: var(--text-color);
-
-        @media (prefers-color-scheme: dark) {
-            color: var(--bg-color);
-        }
+        color: var(--txt-color);
     }
 }
