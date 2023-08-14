@@ -12,6 +12,7 @@
         color: var(--txt-color);
 
         padding: 10px;
+        font-family: 'Roboto Mono', monospace;
         &::before {
             content: "📝";
         }
