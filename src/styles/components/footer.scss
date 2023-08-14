@@ -1,16 +1,16 @@
 .footer {
     --txt-color: #070707;
 
+    @media (prefers-color-scheme: dark) {
+        --txt-color: #edebeb;
+    }
+
     padding: 16px;
     color: var(--txt-color);
 
-    @media (prefers-color-scheme: dark) {
-        color: #edebeb;
-    }
-
     a {
         @media (prefers-color-scheme: dark) {
-            color: #edebeb;
+            color: var(--txt-color);
         }
     }
 }
