@@ -1,5 +1,5 @@
 import JSConfetti from "js-confetti";
-const jsConfetti = new JSConfetti()
+const jsConfetti = new JSConfetti();
 
 
 function checkHourEqualsMinute() {
@@ -8,9 +8,9 @@ function checkHourEqualsMinute() {
     const currentMinute = now.getMinutes();
 
     if (currentHour === currentMinute) {
-      jsConfetti.addConfetti()
+      jsConfetti.addConfetti();
     }
 }
 
-console.log("setting up confetti")
+console.log("setting up confetti");
 setInterval(checkHourEqualsMinute, 1000*10);
